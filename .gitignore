@@ -1,0 +1,67 @@
+# --- Node ---
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# --- Environment Variables ---
+# Environment files anywhere in the repo
+*.env
+.env
+.env.*
+src/.env
+server/.env
+client/.env
+
+.env.local
+.env.development
+.env.production
+.env.test
+
+# Prevent accidentally committing secrets
+*.env
+*.key
+*.pem
+
+# --- Build Artifacts (Frontend) ---
+dist/
+.vite/
+.vite-inspect/
+
+# --- Build Artifacts (Backend) ---
+build/
+coverage/
+
+# --- Logs ---
+logs/
+*.log
+*.log.*
+debug.log
+
+# --- OS Files ---
+.DS_Store
+Thumbs.db
+
+# --- Editor Files ---
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# --- Optional: Ignore local dev data ---
+/tmp/
+/data/
+/uploads/
+
+# --- TypeScript ---
+*.tsbuildinfo
+
+# --- Expo / React Native (not applicable here but safe) ---
+.expo/
+.expo-shared/
+
+# --- Ignore generated lock files if you prefer ---
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
