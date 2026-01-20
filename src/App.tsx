@@ -107,12 +107,12 @@ export default function App() {
       <TicketForm onCreate={onCreate} />
 
       {/* Project filter */}
-      <div className="card project-filter" style={{ display: "flex", gap: 12, alignItems: "center" }}>
+      <div className="card project-filter" >
         <strong>Project</strong>
         <select
           value={projectFilter}
           onChange={(e) => setProjectFilter(e.target.value)}
-          style={{ maxWidth: 260 }}
+          aria-label="Filter tickets by project"
         >
           <option value="all">All projects</option>
           {projects.map(({ norm, raw }, idx) => (
